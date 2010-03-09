@@ -1,22 +1,31 @@
 # Edit this Gemfile to bundle your application's dependencies.
 source 'http://gemcutter.org'
 
-
 gem "rails", "3.0.0.beta"
-
-## Bundle edge rails:
-# gem "rails", :git => "git://github.com/rails/rails.git"
-
 gem "pg"
+gem 'haml'
 
-## Bundle the gems you use:
-# gem "bj"
-# gem "hpricot", "0.6"
-# gem "sqlite3-ruby", :require => "sqlite3"
-# gem "aws-s3", :require => "aws/s3"
+gem 'twitter-auth',
+  :require => 'twitter_auth/engine',
+  :git => 'git://github.com/sinefunc/twitter-auth.git',
+  :branch => 'rails_3'
 
-## Bundle gems used only in certain environments:
-# gem "rspec", :group => :test
-# group :test do
-#   gem "webrat"
-# end
+gem 'rails3-generators',
+  :require => nil,
+  :git => 'git://github.com/jcf/rails3-generators.git'
+
+group :development do
+  gem 'ruby-debug19'
+end
+
+group :test do
+  gem 'ruby-debug19'
+  gem 'rspec-rails'
+end
+
+group :cucumber do
+  gem 'ruby-debug19'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'capybara'
+end
