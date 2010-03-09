@@ -2,6 +2,7 @@
 source 'http://gemcutter.org'
 
 gem "rails", "3.0.0.beta"
+gem 'thin', :group => :production
 gem "pg"
 gem 'haml'
 
