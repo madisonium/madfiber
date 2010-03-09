@@ -14,18 +14,18 @@ gem 'rails3-generators',
   :require => nil,
   :git => 'git://github.com/jcf/rails3-generators.git'
 
-group :development do
-  gem 'ruby-debug19'
-end
-
-group :test do
-  gem 'ruby-debug19'
-  gem 'rspec-rails'
-end
-
-group :cucumber do
-  gem 'ruby-debug19'
-  gem 'cucumber-rails'
-  gem 'database_cleaner'
-  gem 'capybara'
-end
+# group :development do
+#   gem 'ruby-debug19'
+# end
+# 
+# group :test do
+#   gem 'ruby-debug19'
+#   gem 'rspec-rails'
+# end
+# 
+# group :cucumber do
+#   gem 'ruby-debug19'
+#   gem 'cucumber-rails'
+#   gem 'database_cleaner'
+#   gem 'capybara'
+# end
