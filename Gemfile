@@ -9,6 +9,7 @@ gem 'haml'
 gem 'resource_controller'
 gem 'geokit'
 gem 'devise', '1.1.pre4'
+gem 'taps', :git => 'git://github.com/ricardochimal/taps.git'
 # gem 'authlogic', :require => nil
 
 # gem 'twitter-auth',
