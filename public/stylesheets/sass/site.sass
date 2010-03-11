@@ -4,12 +4,17 @@
 !gray = #555
 !google_yellow = #F6D466
 !light_yellow = #F9EBB8
+!link_color = #5884B1
+
+!serif = "Times New Roman, serif"
+!sans = "Helvetica, Arial, sans-serif"
 
 .clear
   :clear both
 body
   :margin 0 auto
   :width 960px
+  :font-family = !sans
 #content
   :background
     :image url(/images/background.png)
@@ -23,6 +28,10 @@ body
     :width 300px
     :margin
       :top 110px
+    :font-family = !serif
+    :text-align center
+    div
+      :text-align left
     #fb
       :height 110px
     #twitter
@@ -109,9 +118,15 @@ body
       :padding-top 0
     p
       :text-align justify
+    p, li
       :font
-        :family Helvetica, Arial, sans-serif
         :size 10pt
+      a
+        :color = !link_color
+        :text-decoration none
+        &:hover
+          :text-decoration underline
+          :color = !link_color * 0.5
 #footer
   :background
     :image url(/images/footer.png)

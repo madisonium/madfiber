@@ -7,6 +7,7 @@ gem "pg"
 gem 'haml'
 
 gem 'resource_controller'
+gem 'geokit'
 gem 'devise', '1.1.pre4'
 # gem 'authlogic', :require => nil
 

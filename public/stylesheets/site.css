@@ -3,7 +3,8 @@
 
 body {
   margin: 0 auto;
-  width: 960px; }
+  width: 960px;
+  font-family: Helvetica, Arial, sans-serif; }
 
 #content {
   background-image: url(/images/background.png);
@@ -15,7 +16,11 @@ body {
   #content #sidebar {
     float: left;
     width: 300px;
-    margin-top: 110px; }
+    margin-top: 110px;
+    font-family: Times New Roman, serif;
+    text-align: center; }
+    #content #sidebar div {
+      text-align: left; }
     #content #sidebar #fb {
       height: 110px; }
     #content #sidebar #twitter {
@@ -90,9 +95,15 @@ body {
       margin-top: -30px;
       padding-top: 0; }
     #content #main p {
-      text-align: justify;
-      font-family: Helvetica, Arial, sans-serif;
+      text-align: justify; }
+    #content #main p, #content #main li {
       font-size: 10pt; }
+      #content #main p a, #content #main li a {
+        color: #5884b1;
+        text-decoration: none; }
+        #content #main p a:hover, #content #main li a:hover {
+          text-decoration: underline;
+          color: #2c4258; }
 
 #footer {
   background-image: url(/images/footer.png);
