@@ -47,8 +47,8 @@ body {
       text-align: right;
       font-weight: normal;
       font-size: 130%;
-      margin-top: 60px;
-      margin-bottom: 0px;
+      margin-top: 30px;
+      margin-bottom: -20px;
       padding-bottom: 0; }
     #content #sidebar #map-entry {
       height: 300px; }
@@ -57,8 +57,13 @@ body {
     background-image: url(/images/header.png);
     background-repeat: no-repeat;
     background-position: top-center; }
+    #content #main h1 {
+      margin-top: -30px;
+      padding-top: 0; }
     #content #main p {
-      text-align: justify; }
+      text-align: justify;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 10pt; }
 
 #footer {
   background-image: url(/images/footer.png);
