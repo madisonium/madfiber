@@ -1,3 +1,8 @@
+- content_for :javascripts do
+  = javascript_include_tag 'http://maps.google.com/maps/api/js?sensor=false'
+  :javascript
+    var pins = #{pins_to_js(@pins)};
+  = javascript_include_tag 'map'
 - content_for :sidebar do
   %h2
     Show your support!
@@ -5,12 +10,16 @@
     Fill out the information below
   #map-entry
     - form_for @pin do |pin|
+      = pin.error_messages
+      - if flash[:notice] || params[:f].present?
+        %span#flash= flash[:notice] || params[:f]
       = pin.label :name, 'Your Name or Business Name'
       = pin.text_field :name
       = pin.label :address, 'Address for Map (optional)'
       = pin.text_field :address
       = pin.label :zip, 'Zip Code'
       = pin.text_field :zip
+      %br/
       = pin.submit
 
 
@@ -24,8 +33,9 @@
   %strong just one city
   in the United States.
 %p
-  The Google Fiber trial network will allow people in the test city to experience Internet speeds of 1 gigabit per second &emdash; or
-  %strong "more than 100 times faster
+  The Google Fiber trial network will allow people in the test city to experience Internet speeds of 1 gigabit per second &mdash; or
+  = precede '"' do
+    %strong more than 100 times faster
   than what most Americans have today" at "a competitive price." Google intends to test this ultra-high speed Internet in a city with a population between 50,000 and 500,000.
 %p
   With a population of just under 225,000, we believe Madison is a perfect fit as Google's trial city. Madison has a strong research and technology base, augmented by the 40,000 strong University of Wisconsin student population. Madison is also home to a growing high-tech entrepreneur community and is home to many young professionals, who, along with college students, make up a large percentage of the demographic that loves to consume large amounts of bandwidth. Madison's city government is also a strong supporter of helping bring Google Fiber to Madison.
@@ -51,10 +61,11 @@
     so we can find and link them
   %li
     Get your pin on this GooFi little map!
+#gmap{style: 'width: 400px; height: 400px'}
 %h2 Want to get even more involved?
 %ul
   %li
-    Create content online &emdash; what would fast-awesome broadband do for you and Madison?
+    Create content online &mdash; what would fast-awesome broadband do for you and Madison?
   %li
     Tag your online photos, videos, and posts (so we can find them) with #madfiber
   %li

@@ -3,6 +3,11 @@
   %head
     %title Help Bring Google Fiber to Madison! (MadFiber)
     = stylesheet_link_tag 'site'
+    - if Rails.env.development?
+      = javascript_include_tag 'jquery/jquery-1.4.2'
+    - else
+      = javascript_include_tag 'jquery/jquery-1.4.2.min'
+    = yield :javascripts
   %body
     #content
       #sidebar

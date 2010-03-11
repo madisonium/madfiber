@@ -16,17 +16,20 @@ body {
     float: left;
     width: 300px;
     margin-top: 110px; }
-    #content #sidebar div, #content #sidebar h2 {
+    #content #sidebar #fb {
+      height: 110px; }
+    #content #sidebar #twitter {
+      height: 80px; }
+    #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #map-entry, #content #sidebar h2 {
       width: 273px; }
-    #content #sidebar div {
+    #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #map-entry {
       border-color: #e8eefa;
       border-style: solid;
       border-width: 1px;
       padding: 3px;
-      height: 110px;
       margin-top: 30px;
       padding-bottom: 15px; }
-      #content #sidebar div a, #content #sidebar div form {
+      #content #sidebar #fb a, #content #sidebar #fb form, #content #sidebar #twitter a, #content #sidebar #twitter form, #content #sidebar #map-entry a, #content #sidebar #map-entry form {
         background-color: #e8eefa;
         background-position: 10px 10px;
         background-repeat: no-repeat;
@@ -38,6 +41,14 @@ body {
         text-decoration: none;
         padding-left: 85px;
         padding-top: 12px; }
+        #content #sidebar #fb a #flash, #content #sidebar #fb form #flash, #content #sidebar #twitter a #flash, #content #sidebar #twitter form #flash, #content #sidebar #map-entry a #flash, #content #sidebar #map-entry form #flash {
+          display: block;
+          text-align: center;
+          padding: 3px;
+          background-color: #f9ebb8;
+          border-color: #f6d466;
+          border-style: solid;
+          border-width: 1px; }
     #content #sidebar #fb a {
       background-image: url(/images/fb.png); }
     #content #sidebar #twitter a {
@@ -52,29 +63,24 @@ body {
       padding-bottom: 0; }
     #content #sidebar #map-entry {
       height: 100%;
-      padding-bottom: 3px; }
+      padding-bottom: 6px; }
       #content #sidebar #map-entry form {
         height: 100%;
-        padding-top: 0px;
-        padding-right: 20px;
-        padding-bottom: 40px;
-        padding-left: 10px;
-        text-align: right; }
-        #content #sidebar #map-entry form div, #content #sidebar #map-entry form div input {
-          height: -10px;
-          padding-top: -10px; }
+        text-align: right;
+        display: block;
+        padding: 1em;
+        margin-bottom: -3px;
+        font-size: 100%; }
         #content #sidebar #map-entry form label {
           margin-top: 0.5em;
-          display: block; }
-        #content #sidebar #map-entry form input {
           display: block;
           width: 100%; }
+        #content #sidebar #map-entry form input[type=text] {
+          width: 90%; }
         #content #sidebar #map-entry form input[type=submit] {
-          width: auto;
           margin-top: 1em; }
         #content #sidebar #map-entry form #pin_zip {
-          width: 7em;
-          right: 0; }
+          width: 40%; }
   #content #main {
     padding: 110px 115px 0 300px;
     background-image: url(/images/header.png);

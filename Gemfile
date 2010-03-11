@@ -6,7 +6,8 @@ gem 'thin', :group => :production
 gem "pg"
 gem 'haml'
 
-gem 'resource_controller', :require => nil
+gem 'resource_controller'
+gem 'devise', '1.1.pre4'
 # gem 'authlogic', :require => nil
 
 # gem 'twitter-auth',

@@ -2,6 +2,8 @@
 // do not change unless you change bounding colors of twitter/fb icons
 !light_blue = #E8EEFA
 !gray = #555
+!google_yellow = #F6D466
+!light_yellow = #F9EBB8
 
 .clear
   :clear both
@@ -21,15 +23,18 @@ body
     :width 300px
     :margin
       :top 110px
-    div, h2
+    #fb
+      :height 110px
+    #twitter
+      :height 80px
+    #fb, #twitter, #map-entry, h2
       :width = 281px - 8px
-    div
+    #fb, #twitter, #map-entry
       :border
         :color = !light_blue
         :style solid
         :width 1px
       :padding 3px
-      :height 110px
       :margin
         :top 30px
       :padding
@@ -49,6 +54,15 @@ body
         :padding
           :left 85px
           :top 12px
+        #flash
+          :display block
+          :text-align center
+          :padding 3px
+          :background-color = !light_yellow
+          :border
+            :color = !google_yellow
+            :style solid
+            :width 1px
     & #fb a
       :background-image url(/images/fb.png)
     & #twitter a
@@ -65,30 +79,24 @@ body
       :padding-bottom 0
     #map-entry
       :height 100%
-      :padding-bottom 3px
+      :padding-bottom 6px
       form
         :height 100%
-        :padding
-          :top 0px
-          :right 20px
-          :bottom 40px
-          :left 10px
         :text-align right
-        div, div input
-          :height -10px
-          :padding-top -10px
+        :display block
+        :padding 1em
+        :margin-bottom -3px
+        :font-size 100%
         label
           :margin-top 0.5em
           :display block
-        input
-          :display block
           :width 100%
+        input[type=text]
+          :width 90%
         input[type=submit]
-          :width auto
           :margin-top 1em
         #pin_zip
-          :width 7em
-          :right 0
+          :width 40%
 
   #main
     :padding 110px 115px 0 300px
