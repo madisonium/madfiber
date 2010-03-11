@@ -1,0 +1,81 @@
+
+// do not change unless you change bounding colors of twitter/fb icons
+!light_blue = #E8EEFA
+!gray = #555
+
+.clear
+  :clear both
+body
+  :margin 0 auto
+  :width 960px
+#content
+  :background
+    :image url(/images/background.png)
+    :repeat repeat-y
+    :position center
+  :width 960px
+  :margin 0 auto
+  :padding-bottom 10px
+  #sidebar
+    :float left
+    :width 300px
+    :margin
+      :top 110px
+    div, h2
+      :width = 281px - 8px
+    div
+      :border
+        :color = !light_blue
+        :style solid
+        :width 1px
+      :padding 3px
+      :height 110px
+      :margin
+        :top 30px
+      :padding
+        :bottom 15px
+      a, form
+        :background
+          :color = !light_blue
+          :position 10px 10px
+          :repeat no-repeat
+        :font
+          :size 110%
+        :line-height 1.3em
+        :display block
+        :height 100%
+        :color = !gray
+        :text-decoration none
+        :padding
+          :left 85px
+          :top 12px
+    & #fb a
+      :background-image url(/images/fb.png)
+    & #twitter a
+      :background-image url(/images/twitter.png)
+    h2
+      :color = !gray
+      :text-align right
+      :font
+        :weight normal
+        :size 130%
+      :margin
+        :top 60px
+        :bottom 0px
+      :padding-bottom 0
+    #map-entry
+      :height 300px
+  #main
+    :padding 110px 115px 0 300px
+    :background
+      :image url(/images/header.png)
+      :repeat no-repeat
+      :position top-center
+    p
+      :text-align justify
+#footer
+  :background
+    :image url(/images/footer.png)
+    :position top-center
+    :repeat no-repeat
+  :padding-top 186px

@@ -1,32 +1,32 @@
 !!! 5
 %html
   %head
-    %title Madison Fiber Project
-    = javascript_include_tag 'cufon-yui', 'raleway-thin_250.font'
-    :javascript
-      Cufon.replace('h1');
-    %style
-      :sass
-        body
-          :background-color #031634
-          :font
-            :size 24px
-            :family Arial, sans-serif
-          :text-align center
-        span
-          :display block
-        h1
-          :color #E8DDCB
-          :margin-top 4em
-        div a
-          :color #CDB380
-          :font
-            :size small
-            :weight lighter
-          :text-decoration none
-          :border-bottom dotted 1px #CDB380
+    %title Help Bring Google Fiber to Madison! (MadFiber)
+    = stylesheet_link_tag 'site'
   %body
-    = yield
+    #content
+      #sidebar
+        = image_tag 'fiber_house.gif'
+        #fb
+          %a{href: '#'}
+            Join the cause on Facebook!
+            Help bring Google Fiber to Madison Wisconsin.
+        #twitter
+          %a{href: '#'}
+            Follow us on Twitter!
+            %br/
+            \#madfiber
+        %h2
+          Show your support!
+          %br
+          Fill out the information below
+        #map-entry
+          %form
+            &nbsp;
+
+      #main= yield
+      .clear
+    #footer
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
