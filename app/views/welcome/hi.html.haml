@@ -1,3 +1,19 @@
+- content_for :sidebar do
+  %h2
+    Show your support!
+    %br
+    Fill out the information below
+  #map-entry
+    - form_for @pin do |pin|
+      = pin.label :name, 'Your Name or Business Name'
+      = pin.text_field :name
+      = pin.label :address, 'Address for Map (optional)'
+      = pin.text_field :address
+      = pin.label :zip, 'Zip Code'
+      = pin.text_field :zip
+      = pin.submit
+
+
 %h1 Bring Google Fiber to Madison!
 %p
   Google is launching

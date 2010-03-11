@@ -6,10 +6,13 @@ gem 'thin', :group => :production
 gem "pg"
 gem 'haml'
 
-gem 'twitter-auth',
-  :require => 'twitter_auth/engine',
-  :git => 'git://github.com/sinefunc/twitter-auth.git',
-  :branch => 'rails_3'
+gem 'resource_controller', :require => nil
+# gem 'authlogic', :require => nil
+
+# gem 'twitter-auth',
+  # :require => 'twitter_auth/engine',
+  # :git => 'git://github.com/sinefunc/twitter-auth.git',
+  # :branch => 'rails_3'
 
 gem 'rails3-generators',
   :require => nil,
@@ -20,8 +23,9 @@ gem 'rails3-generators',
 # end
 # 
 # group :test do
-#   gem 'ruby-debug19'
 #   gem 'rspec-rails'
+#   gem 'test-unit', '1.2.3'
+#   gem 'ZenTest'
 # end
 # 
 # group :cucumber do

@@ -51,7 +51,30 @@ body {
       margin-bottom: -20px;
       padding-bottom: 0; }
     #content #sidebar #map-entry {
-      height: 300px; }
+      height: 100%;
+      padding-bottom: 3px; }
+      #content #sidebar #map-entry form {
+        height: 100%;
+        padding-top: 0px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        text-align: right; }
+        #content #sidebar #map-entry form div, #content #sidebar #map-entry form div input {
+          height: -10px;
+          padding-top: -10px; }
+        #content #sidebar #map-entry form label {
+          margin-top: 0.5em;
+          display: block; }
+        #content #sidebar #map-entry form input {
+          display: block;
+          width: 100%; }
+        #content #sidebar #map-entry form input[type=submit] {
+          width: auto;
+          margin-top: 1em; }
+        #content #sidebar #map-entry form #pin_zip {
+          width: 7em;
+          right: 0; }
   #content #main {
     padding: 110px 115px 0 300px;
     background-image: url(/images/header.png);
