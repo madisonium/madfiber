@@ -9,7 +9,6 @@ namespace :google do
     CSV.foreach(newest, :headers => true) do |row|
       pin = Pin.new(:name => row[1], :address => row[2])
       pin.created_at = row[0] if row[0].present?
-      pin.approved = true
       if pin.save_without_geocoding
         $stdout.print('.')
         counter += 1

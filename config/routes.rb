@@ -1,5 +1,10 @@
 Madfiber::Application.routes.draw do |map|
-  resources :pins
+  resources :pins do
+    member do
+      post :add_madison
+      post :approve
+    end
+  end
 
   root :to => 'welcome#hi'
   # The priority is based upon order of creation:

@@ -1,0 +1,13 @@
+#flash= flash[:notice]
+%br
+- @unapproved_pins.each do |pin|
+  %br
+  .box
+    .addr= pin.address
+    .approve
+      = button_to 'approve', approve_pin_path(pin)
+      = button_to 'add madison', add_madison_pin_path(pin)
+%hr
+- @approved_pins.each do |pin|
+  .box
+    .addr= pin.address

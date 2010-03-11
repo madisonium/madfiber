@@ -3,11 +3,14 @@ class Pin < ActiveRecord::Base
 
   attr_accessor :do_not_geocode
 
-  validates :zip, :presence => true, :format => /\A\d{5}\z/, :unless => :do_not_geocode
+  # validates :zip, :presence => true, :format => /\A\d{5}\z/, :unless => :do_not_geocode
 
   scope :ok, where(:approved => true)
   before_save :update_lat_and_lng, :unless => :do_not_geocode
 
+  def self.not_ok
+    self.all - self.ok.all
+  end
   def approve
     update_attribute :approved, true
   end
