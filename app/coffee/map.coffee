@@ -1,7 +1,7 @@
 
 init: ->
   myOptions: {
-    zoom: 12,
+    zoom: 11,
     center: new google.maps.LatLng(43.074531, -89.384422)
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }

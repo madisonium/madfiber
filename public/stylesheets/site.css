@@ -104,6 +104,9 @@ body {
         #content #main p a:hover, #content #main li a:hover {
           text-decoration: underline;
           color: #2c4258; }
+    #content #main #how-many {
+      width: 500px;
+      text-align: right; }
 
 #footer {
   background-image: url(/images/footer.png);
