@@ -3,7 +3,10 @@
 - @unapproved_pins.each do |pin|
   %br
   .box
-    .addr= pin.address
+    .addr
+      .name= pin.name
+      .address= pin.address
+      .zip= pin.zip
     .approve
       = button_to 'approve', approve_pin_path(pin)
       = button_to 'add madison', add_madison_pin_path(pin)
