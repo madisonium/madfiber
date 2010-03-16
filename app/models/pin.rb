@@ -5,7 +5,7 @@ class Pin < ActiveRecord::Base
 
   # validates :zip, :presence => true, :format => /\A\d{5}\z/, :unless => :do_not_geocode
 
-  scope :ok, where(:approved => true)
+  scope :ok, where(:approved => true).where('lat NOT NULL')
   before_save :update_lat_and_lng, :unless => :do_not_geocode
 
   def self.not_ok

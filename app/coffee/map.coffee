@@ -8,9 +8,8 @@ init: ->
   map: new google.maps.Map($('#gmap')[0], myOptions)
 
   $.each(window.pins, (index, element) ->
-    p: new google.maps.LatLng(element.lat, element.lng)
     new google.maps.Marker({
-      position: p
+      position: new google.maps.LatLng(element.lat, element.lng)
       map: map,
       title: element.title
     })

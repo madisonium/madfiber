@@ -9,10 +9,8 @@
     };
     map = new google.maps.Map($('#gmap')[0], myOptions);
     return $.each(window.pins, function(index, element) {
-      var p;
-      p = new google.maps.LatLng(element.lat, element.lng);
       return new google.maps.Marker({
-        position: p,
+        position: new google.maps.LatLng(element.lat, element.lng),
         map: map,
         title: element.title
       });
