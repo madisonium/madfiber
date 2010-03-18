@@ -86,6 +86,9 @@ body {
           margin-top: 1em; }
         #content #sidebar #map-entry form #pin_zip {
           width: 40%; }
+    #content #sidebar #widgetbox_widget_parent_0 {
+      width: 261px;
+      padding: 10px 0 0 20px; }
   #content #main {
     padding: 110px 115px 0 300px;
     background-image: url(/images/header.png);
