@@ -58,31 +58,13 @@
 %h2 Get Involved!
 %ul
   %li
-    Watch the City Meeting
-    = link_to 'live streamed', 'http://www.livestream.com/imsmadison'
-    on Thursday, March 11 at 7pm or check out the
-    = link_to 'slides', '/assets/city_meeting_slides.pdf'
-  %li
     Fill out the
     = link_to 'Google Fiber Nomination form', 'http://www.google.com/appserve/fiberrfi/public/options'
   %li
-    Become a fan of the
-    = link_to 'Facebook page', 'http://www.facebook.com/pages/Madison-WI/Bring-Google-Fiber-to-Madison-Wisconsin/298796674303'
+    Email pictures and video to
+    = mail_to 'madfiber@posterous.com', 'madfiber@posterous.com', :subject => 'I Support Google Fiber #madfiber ((tag:madfiber))'
   %li
-    Follow us on
-    = link_to 'Twitter', 'http://twitter.com/GoogNet4Madison'
-  %li
-    Check out our
-    = link_to 'Flickr', 'http://www.flickr.com/groups/madfiber'
-    and
-    = link_to 'YouTube', 'http://www.youtube.com/madfiber2010'
-    pages
-  %li
-    Tag your tweets and posts with
-    = link_to '#madfiber', 'http://search.twitter.com/search?q=%23madfiber'
-    so we can find and link them
-  %li
-    Get your pin on this GooFi little map!
+    Add your address to the GooFi Map!
 #gmap{style: 'width: 500px; height: 500px'}
 #how-many #{@pins.count} people are interested!
 %h2 Want to get even more involved?
