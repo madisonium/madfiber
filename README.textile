@@ -1,4 +1,18 @@
 h1. madfiber.net
 
-p.
-  
+h2. hacking
+
+To hack on madfiber.net, you should use `rvm` to install:
+
+* ruby 1.9.1
+* the bundler gem
+
+Once those two things are installed, ask brad@bendyworks.com for access and do:
+
+* git clone git@heroku.com:madfiber.net
+* cd madfiber
+* fix your database.yml file to your liking
+  * heroku uses postgres, so that's what I'm using... ideally, it shouldn't matter which db you use locally
+* bundle install
+
+This project uses rails 3.0.0.beta1. That means the script/ folder is basically gone. Use the rails command for almost everything.
