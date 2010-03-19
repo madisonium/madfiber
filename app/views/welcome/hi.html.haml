@@ -37,9 +37,9 @@
 %h1 Bring Google Fiber to Madison!
 %p
   Google is launching
-  = link_to 'an experiment', 'http://www.google.com/appserve/fiberrfi'
+  = link_to 'an experiment', google_landing_url
   to bring
-  = link_to '"ultra-high speed broadband"', 'http://www.google.com/appserve/fiberrfi/public/overview'
+  = link_to '"ultra-high speed broadband"', google_overview_url
   to
   %strong just one city
   in the United States.
@@ -53,18 +53,29 @@
 %p
   Show your support by signing your household up on this Google Maps interactive petition. Invite your neighbors, co-workers and other Madisonians! Join the
   = succeed ',' do
-    = link_to 'Facebook group', 'http://www.facebook.com/pages/Madison-WI/Bring-Google-Fiber-to-Madison-Wisconsin/298796674303'
+    = link_to 'Facebook group', facebook_url
   follow our progress on Twitter and remember to Google Buzz to bring Google Fiber to Madison!
 %h2 Get Involved!
 %ul
   %li
     Fill out the
-    = link_to 'Google Fiber Nomination form', 'http://www.google.com/appserve/fiberrfi/public/options'
+    = link_to 'Google Fiber Nomination form', google_nomination_url
+    or use the
+    = link_to 'City of Madison survey', city_survey_url
+    to log your support with the City's response
   %li
-    Email pictures and video to
-    = mail_to 'madfiber@posterous.com', 'madfiber@posterous.com', :subject => 'I Support Google Fiber #madfiber ((tag:madfiber))'
+    Follow &amp; Contribute! Post your thoughts, pictures and videos to madfiber's
+    = link_to 'Facebook', facebook_url
+    and
+    = link_to 'Flickr', flickr_url
+    pages
   %li
-    Add your address to the GooFi Map!
+    You can also email posts to our
+    = link_to 'blog', posterous_url
+    at
+    = mail_to 'post@madfiber.posterous.com', 'post@madfiber.posterous.com', :subject => 'I Support Google Fiber #madfiber ((tag:madfiber))'
+  %li
+    Add your name, address and zip to the GooFi Map!
 #gmap{style: 'width: 500px; height: 500px'}
 #how-many #{@pins.count} people are interested!
 %h2 Want to get even more involved?
