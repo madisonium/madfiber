@@ -30,5 +30,5 @@ Madfiber::Application.configure do
 
   # Enable threaded mode
   # config.threadsafe!
-  config.action_mailer.default_url_options = { :host => 'www.madfiber.net' }
+  config.action_mailer.default_url_options = { :host => 'madfiber-staging.heroku.com' }
 end
