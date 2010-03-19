@@ -4,10 +4,19 @@
     var pins = #{pins_to_js(@pins)};
   = javascript_include_tag 'map'
 - content_for :sidebar do
+  #add-your-pin
+    - add_your_pin = capture_haml do
+      Add your map pin
+      %span
+        Show your support by adding your address to the map.
+        Fill out the information below.
+    = link_to add_your_pin, '#map-entry'
   %h2
     Show your support!
     %br
-    Fill out the information below
+    Fill out the
+    %br
+    information below
   #map-entry
     - form_for @pin do |pin|
       = pin.error_messages

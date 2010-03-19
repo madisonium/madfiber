@@ -11,27 +11,57 @@
   %body
     #content
       #sidebar
-        = image_tag 'BringGoogleFiberToMadisonLogo.png'
+        #madison-logo= image_tag 'BringGoogleFiberToMadisonLogo.png'
+        #get-involved Get Involved!
         #fb
-          %a{href: 'http://www.facebook.com/pages/Madison-WI/Bring-Google-Fiber-to-Madison-Wisconsin/298796674303'}
-            Join the cause on Facebook!
-            Help bring Google Fiber to Madison Wisconsin.
+          - join_facebook = capture_haml do
+            Fan us on
+            %br
+            Facebook
+            %br
+            %span
+              Become a fan of
+              %strong Bring Google Fiber to Madison Wisconsin!
+          = link_to join_facebook, facebook_url
         #twitter
-          %a{href: 'http://search.twitter.com/search?q=%23madfiber'}
-            Follow us on Twitter!
-            %br/
-            \#madfiber
+          - follow_twitter = capture_haml do
+            Follow on
+            %br
+            Twitter
+            %span
+              Follow
+              %strong GoogNet4Madison
+              and tag your tweets
+              %strong #madfiber
+          = link_to follow_twitter, 'http://search.twitter.com/search?q=%23madfiber'
+        #posterous
+          - posterous = capture_haml do
+            Post vids and pics
+            %span
+              Add your pictures and videos to the stream.
+              Email them to
+              %strong post@madfiber.posterous.com
+          = link_to posterous, posterous_url
+        #flickr
+          - flickr = capture_haml do
+            Show us on Flickr
+            %span
+              Upload your &quot;I'd use Google Fiber&quot;
+              pic to show where you would use it. Tag it
+              %strong madfiber
+          = link_to flickr, flickr_url
         = yield :sidebar
-        %script{:type => 'text/javascript', :src => widget_js_url}
-        :javascript
-          if (WIDGETBOX) WIDGETBOX.renderWidget('0ee35e6d-afd0-4652-9a41-6d05f23dddef');
-        %noscript
-          Get the
-          = link_to "madfiber's posterous - Share your hopes and dream", widget_url
-          widget and many other.
-          %br
-          Not seeing a widget?
-          = link_to '(More info)', widget_install_url
+        #widget
+          %script{:type => 'text/javascript', :src => widget_js_url}
+          :javascript
+            if (WIDGETBOX) WIDGETBOX.renderWidget('0ee35e6d-afd0-4652-9a41-6d05f23dddef');
+          %noscript
+            Get the
+            = link_to "madfiber's posterous - Share your hopes and dream", widget_url
+            widget and many other.
+            %br
+            Not seeing a widget?
+            = link_to '(More info)', widget_install_url
       #main= yield
       .clear
     #footer
