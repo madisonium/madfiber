@@ -22,6 +22,16 @@
             %br/
             \#madfiber
         = yield :sidebar
+        %script{:type => 'text/javascript', :src => widget_js_url}
+        :javascript
+          if (WIDGETBOX) WIDGETBOX.renderWidget('0ee35e6d-afd0-4652-9a41-6d05f23dddef');
+        %noscript
+          Get the
+          = link_to "madfiber's posterous - Share your hopes and dream", widget_url
+          widget and many other.
+          %br
+          Not seeing a widget?
+          = link_to '(More info)', widget_install_url
       #main= yield
       .clear
     #footer

@@ -27,4 +27,17 @@ module ApplicationHelper
   def posterous_url
     'http://madfiber.posterous.com'
   end
+
+  def widget_url
+    "http://www.widgetbox.com/widget/madfibers-posterous-share-your-hopes-and-dream"
+  end
+
+  def widget_install_url
+    "http://docs.widgetbox.com/using-widgets/installing-widgets/why-cant-i-see-my-widget/"
+  end
+
+  def widget_js_url
+    'http://cdn.widgetserver.com/syndication/subscriber/InsertWidget.js'
+  end
+
 end
