@@ -30,5 +30,7 @@ Madfiber::Application.configure do
 
   # Enable threaded mode
   # config.threadsafe!
+  ActionMailer::Base.send(:include, ActionController::UrlFor) if defined?(ActionController)
+
   config.action_mailer.default_url_options = { :host => 'www.madfiber.net' }
 end

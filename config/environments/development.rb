@@ -7,5 +7,7 @@ Madfiber::Application.configure do
   config.action_controller.perform_caching = false
   config.action_mailer.raise_delivery_errors = false
 
+  ActionMailer::Base.send(:include, ActionController::UrlFor) if defined?(ActionController)
+
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
