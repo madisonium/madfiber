@@ -46,11 +46,11 @@
         = yield
       .clear
     #footer
-      -#%ul
-        %li.first= link_to 'About Us'
-        %li= link_to 'Privacy Policy'
-      %br
-      &copy;2010 Bradley Grzesiak/Preston Austin
+      %ul
+        %li.first= link_to 'The MadFiber Cabal', cabal_path
+        -#%li= link_to 'Privacy Policy'
+      &copy;2010
+      = link_to 'The MadFiber Cabal', cabal_path
 
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
