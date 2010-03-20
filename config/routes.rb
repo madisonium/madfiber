@@ -1,4 +1,6 @@
 Madfiber::Application.routes.draw do |map|
+  devise_for :users
+
   resources :pins do
     member do
       post :add_madison
