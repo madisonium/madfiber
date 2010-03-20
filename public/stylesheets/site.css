@@ -130,6 +130,8 @@ body {
   margin: 0 auto;
   width: 960px;
   font-family: Helvetica, Arial, sans-serif; }
+  body a, body a:visited {
+    color: #5884b1; }
 
 #content {
   background-image: url(/images/background.png);
@@ -159,3 +161,7 @@ body {
     #content #main #how-many {
       width: 500px;
       text-align: right; }
+
+#sign-out {
+  font-size: small;
+  float: right; }

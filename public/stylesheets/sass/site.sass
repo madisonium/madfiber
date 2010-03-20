@@ -1,13 +1,14 @@
 
-// do not change unless you change bounding colors of twitter/fb icons
+// do not change light_blue unless you change bounding colors of twitter/fb icons
 !light_blue = #E8EEFA
+
 !gray = #555
 !google_yellow = #F6D466
 !light_yellow = #F9EBB8
 !link_color = #5884B1
 
 !serif = "Times New Roman, serif"
-!sans = "Helvetica, Arial, sans-serif"
+!sans  = "Helvetica, Arial, sans-serif"
 
 @import sidebar.sass
 @import footer.sass
@@ -18,6 +19,8 @@ body
   :margin 0 auto
   :width 960px
   :font-family = !sans
+  a, a:visited
+    :color = !link_color
 #content
   :background
     :image url(/images/background.png)
@@ -49,3 +52,6 @@ body
     #how-many
       :width 500px
       :text-align right
+#sign-out
+  :font-size small
+  :float right

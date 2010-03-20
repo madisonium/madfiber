@@ -36,7 +36,10 @@
                 %br
                 Not seeing a widget?
                 = link_to '(More info)', widget_install_url
-      #main= yield
+      #main
+        - if user_signed_in?
+          #sign-out= link_to '[logout]', destroy_user_session_path
+        = yield
       .clear
     #footer
       %ul
