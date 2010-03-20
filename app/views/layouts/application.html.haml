@@ -1,6 +1,7 @@
 !!! 5
 %html
   %head
+    -# TODO: add meta tags!
     %title Help Bring Google Fiber to Madison! (MadFiber)
     = stylesheet_link_tag 'site'
     - if Rails.env.development?
@@ -15,42 +16,13 @@
         #get-involved Get Involved!
         %ul
           %li
-            #fb
-              - join_facebook = capture_haml do
-                Fan us on Facebook
-                %br
-                %span
-                  Become a fan of
-                  %strong Bring Google Fiber to Madison Wisconsin!
-              = link_to join_facebook, facebook_url
+            #fb= render :partial => 'shared/panels/facebook'
           %li
-            #twitter
-              - follow_twitter = capture_haml do
-                Follow on Twitter
-                %span
-                  Follow
-                  %strong GoogNet4Madison
-                  and tag your tweets
-                  %strong #madfiber
-              = link_to follow_twitter, 'http://search.twitter.com/search?q=%23madfiber'
+            #twitter= render :partial => 'shared/panels/twitter'
           %li
-            #posterous
-              - posterous = capture_haml do
-                Post vids and pics
-                %span
-                  Add your pictures and videos to the stream.
-                  Email them to
-                  %strong post@madfiber.posterous.com
-              = link_to posterous, posterous_url
+            #posterous= render :partial => 'shared/panels/posterous'
           %li
-            #flickr
-              - flickr = capture_haml do
-                Show us on Flickr
-                %span
-                  Upload your &quot;I'd use Google Fiber&quot;
-                  pic to show where you would use it. Tag it
-                  %strong madfiber
-              = link_to flickr, flickr_url
+            #flickr= render :partial => 'shared/panels/flickr'
           = yield :sidebar
           %li
             #widget
@@ -67,6 +39,11 @@
       #main= yield
       .clear
     #footer
+      %ul
+        %li.first= link_to 'About Us'
+        %li= link_to 'Privacy Policy'
+      &copy;2010 Bradley Grzesiak/Preston Austin
+
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

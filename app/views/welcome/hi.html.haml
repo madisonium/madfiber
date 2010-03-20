@@ -11,27 +11,7 @@
 
 - content_for :sidebar do
   %li
-    #add-your-pin
-      - add_your_pin = capture_haml do
-        Add your map pin
-        %span
-          Show your support by adding your address to the map.
-          Fill out the information below.
-      = link_to add_your_pin, '#map-entry'
-      #map-entry
-        - form_for @pin do |pin|
-          = pin.error_messages
-          - if flash[:notice] || params[:f].present?
-            %span#flash= flash[:notice] || params[:f]
-          = pin.label :name, 'Your Name or Business Name'
-          = pin.text_field :name
-          = pin.label :address, 'Address for Map (optional)'
-          = pin.text_field :address
-          = pin.label :zip, 'Zip Code'
-          = pin.text_field :zip
-          %br/
-          = pin.submit
-
+    #add-your-pin= render :partial => 'shared/panels/add_your_pin'
 
 %h1 Bring Google Fiber to Madison!
 %p

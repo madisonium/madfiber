@@ -102,6 +102,27 @@
     position: relative;
     right: 16px; }
 
+#footer {
+  background-image: url(/images/footer.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 176px 0 10px;
+  text-align: center;
+  font-size: small; }
+  #footer ul {
+    list-style-type: none; }
+    #footer ul li {
+      display: inline; }
+      #footer ul li a {
+        padding-left: 5px;
+        color: #5884b1; }
+        #footer ul li a:visited {
+          color: #5884b1; }
+    #footer ul li:before {
+      content: "|"; }
+    #footer ul li.first:before {
+      content: ""; }
+
 .clear {
   clear: both; }
 
@@ -138,9 +159,3 @@ body {
     #content #main #how-many {
       width: 500px;
       text-align: right; }
-
-#footer {
-  background-image: url(/images/footer.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-top: 186px; }
