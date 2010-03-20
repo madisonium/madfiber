@@ -9,6 +9,8 @@
 !serif = "Times New Roman, serif"
 !sans = "Helvetica, Arial, sans-serif"
 
+@import sidebar.sass
+
 .clear
   :clear both
 body
@@ -23,115 +25,6 @@ body
   :width 960px
   :margin 0 auto
   :padding-bottom 10px
-  #sidebar
-    :float left
-    :width 300px
-    :margin
-      :top 110px
-    :font
-      :family = !serif
-      :size 11pt
-    :line-height 0.9em
-    :text-align center
-    div
-      :text-align left
-    #madison-logo
-      :width 241px
-      :text-align center
-    #get-involved
-      :width 241px
-      :text-align center
-      :padding 10px 3px
-      :font-size 200%
-    #fb, #twitter, #posterous, #flickr, #map-entry, #add-your-pin, h2
-      :width = 251px - 8px
-    #fb, #twitter, #posterous, #flickr, #map-entry, #add-your-pin
-      :height 90px
-      :font-size 140%
-      span
-        :display block
-        :font-size 10pt
-        :font-style italic
-        :line-height 1.3em
-      :border
-        :color = !light_blue
-        :style solid
-        :width 1px
-      :padding 3px
-      :margin
-        :top 10px
-      :padding
-        :bottom 15px
-      a, form
-        :background
-          :color = !light_blue
-          :position 5px
-          :repeat no-repeat
-        :line-height 1.3em
-        :display block
-        :height 100%
-        :color = !gray
-        :text-decoration none
-        :padding
-          :left 75px
-          :top 12px
-        #flash
-          :display block
-          :text-align center
-          :padding 3px
-          :background-color = !light_yellow
-          :border
-            :color = !google_yellow
-            :style solid
-            :width 1px
-    & #fb a
-      :background-image url(/images/fb.png)
-    & #twitter a
-      :background-image url(/images/twitter.png)
-    & #posterous a
-      :background-image url(/images/posterous.png)
-    & #flickr a
-      :background-image url(/images/flickr.png)
-    & #add-your-pin a
-      :background-image url(/images/gmap.png)
-    h2
-      :color = !gray
-      :text-align right
-      :font
-        :weight bold
-        :size 150%
-      :margin
-        :top 30px
-        :bottom -5px
-      :padding-bottom 0
-      :line-height 1.2em
-    #map-entry
-      :height 100%
-      :padding-bottom 6px
-      form
-        :height 100%
-        :text-align right
-        :display block
-        :padding 1em
-        :margin-bottom -3px
-        :font-size 80%
-        label
-          :margin-top 0.5em
-          :display block
-          :width 100%
-        input[type=text]
-          :width 90%
-        input[type=submit]
-          :margin-top 1em
-        #pin_zip
-          :width 40%
-    #widgetbox_widget_parent_0
-    #widget
-      :width 261px
-      :padding 10px 0 0 20px
-      :position relative
-      :right 16px
-
   #main
     :padding 110px 115px 0 300px
     :background

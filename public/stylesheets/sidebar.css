@@ -1,0 +1,85 @@
+/*
+Sass::SyntaxError: Undefined variable: "!serif".
+on line 8 of /Users/brad/Development/pro/madfiber/public/stylesheets/sass/sidebar.sass
+
+4:     :width 300px
+5:     :margin
+6:       :top 110px
+7:     :font
+8:       :family = !serif
+9:       :size 11pt
+10:     :line-height 0.9em
+11:     :text-align center
+12:     div
+13:       :text-align left
+14:     #madison-logo
+
+
+Backtrace:
+/Users/brad/Development/pro/madfiber/public/stylesheets/sass/sidebar.sass:8
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/script/variable.rb:27:in `perform'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/prop_node.rb:99:in `perform!'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:181:in `_perform'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:158:in `perform'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `block in perform_children'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `map'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `perform_children'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:193:in `perform!'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/prop_node.rb:100:in `perform!'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:181:in `_perform'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:158:in `perform'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `block in perform_children'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `map'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `perform_children'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:193:in `perform!'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/rule_node.rb:160:in `perform!'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:181:in `_perform'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:158:in `perform'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `block in perform_children'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `map'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `perform_children'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:193:in `perform!'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/rule_node.rb:160:in `perform!'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:181:in `_perform'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:158:in `perform'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `block in perform_children'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `map'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:202:in `perform_children'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:193:in `perform!'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:181:in `_perform'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:158:in `perform'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/tree/node.rb:103:in `render'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/plugin.rb:97:in `update_stylesheet'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/plugin.rb:83:in `block (2 levels) in update_stylesheets'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/plugin.rb:78:in `each'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/plugin.rb:78:in `block in update_stylesheets'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/plugin.rb:76:in `each'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/plugin.rb:76:in `update_stylesheets'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/plugin.rb:63:in `check_for_updates'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/haml-2.2.20/lib/sass/plugin/rails.rb:13:in `block in <top (required)>'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta/lib/active_support/callbacks.rb:443:in `_run_prepare_callbacks'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta/lib/active_support/callbacks.rb:88:in `run_callbacks'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta/lib/action_dispatch/middleware/callbacks.rb:45:in `block in call'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta/lib/active_support/callbacks.rb:429:in `_run_call_callbacks'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta/lib/active_support/callbacks.rb:88:in `run_callbacks'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta/lib/action_dispatch/middleware/show_exceptions.rb:62:in `call'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta/lib/rails/rack/logger.rb:13:in `call'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta/lib/rails/application.rb:95:in `call'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta/lib/rails/application.rb:41:in `method_missing'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta/lib/rails/rack/log_tailer.rb:15:in `call'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Users/brad/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/Users/brad/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/brad/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/brad/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: Undefined variable: \"!serif\".\A on line 8 of /Users/brad/Development/pro/madfiber/public/stylesheets/sass/sidebar.sass\A \A 4:     :width 300px\A 5:     :margin\A 6:       :top 110px\A 7:     :font\A 8:       :family = !serif\A 9:       :size 11pt\A 10:     :line-height 0.9em\A 11:     :text-align center\A 12:     div\A 13:       :text-align left\A 14:     #madison-logo\A "; }

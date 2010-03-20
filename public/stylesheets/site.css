@@ -1,3 +1,107 @@
+#content #sidebar {
+  float: left;
+  width: 300px;
+  margin-top: 110px;
+  font-family: Times New Roman, serif;
+  font-size: 11pt;
+  line-height: 0.9em;
+  text-align: center; }
+  #content #sidebar div {
+    text-align: left; }
+  #content #sidebar #madison-logo {
+    width: 241px;
+    text-align: center; }
+  #content #sidebar #get-involved {
+    width: 241px;
+    text-align: center;
+    padding: 10px 3px;
+    font-size: 200%; }
+  #content #sidebar ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0; }
+  #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #posterous, #content #sidebar #flickr, #content #sidebar #map-entry, #content #sidebar #add-your-pin, #content #sidebar h2 {
+    width: 243px; }
+  #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #posterous, #content #sidebar #flickr {
+    height: 90px;
+    padding: 3px 3px 15px; }
+  #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #posterous, #content #sidebar #flickr, #content #sidebar #add-your-pin {
+    font-size: 130%;
+    border-color: #e8eefa;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px; }
+    #content #sidebar #fb span, #content #sidebar #twitter span, #content #sidebar #posterous span, #content #sidebar #flickr span, #content #sidebar #add-your-pin span {
+      display: block;
+      font-size: 10pt;
+      font-style: italic;
+      line-height: 1.3em; }
+    #content #sidebar #fb a, #content #sidebar #fb form, #content #sidebar #twitter a, #content #sidebar #twitter form, #content #sidebar #posterous a, #content #sidebar #posterous form, #content #sidebar #flickr a, #content #sidebar #flickr form, #content #sidebar #add-your-pin a, #content #sidebar #add-your-pin form {
+      background-color: #e8eefa;
+      background-position: 5px;
+      background-repeat: no-repeat;
+      line-height: 1.3em;
+      display: block;
+      height: 100%;
+      color: #555555;
+      text-decoration: none;
+      padding-left: 75px;
+      padding-top: 12px; }
+      #content #sidebar #fb a #flash, #content #sidebar #fb form #flash, #content #sidebar #twitter a #flash, #content #sidebar #twitter form #flash, #content #sidebar #posterous a #flash, #content #sidebar #posterous form #flash, #content #sidebar #flickr a #flash, #content #sidebar #flickr form #flash, #content #sidebar #add-your-pin a #flash, #content #sidebar #add-your-pin form #flash {
+        display: block;
+        text-align: center;
+        padding: 3px;
+        background-color: #f9ebb8;
+        border-color: #f6d466;
+        border-style: solid;
+        border-width: 1px; }
+  #content #sidebar #add-your-pin {
+    padding: 3px 3px 0; }
+  #content #sidebar #fb a {
+    background-image: url(/images/fb.png); }
+  #content #sidebar #twitter a {
+    background-image: url(/images/twitter.png); }
+  #content #sidebar #posterous a {
+    background-image: url(/images/posterous.png); }
+  #content #sidebar #flickr a {
+    background-image: url(/images/flickr.png); }
+  #content #sidebar #add-your-pin a {
+    background-image: url(/images/gmap.png); }
+  #content #sidebar h2 {
+    color: #555555;
+    text-align: right;
+    font-weight: bold;
+    font-size: 150%;
+    margin-top: 30px;
+    margin-bottom: -5px;
+    padding-bottom: 0;
+    line-height: 1.2em; }
+  #content #sidebar #map-entry {
+    height: 100%;
+    padding-bottom: 6px; }
+    #content #sidebar #map-entry form {
+      height: 100%;
+      text-align: right;
+      display: block;
+      padding: 1em;
+      margin-bottom: -3px;
+      font-size: 80%; }
+      #content #sidebar #map-entry form label {
+        margin-top: 0.5em;
+        display: block;
+        width: 100%; }
+      #content #sidebar #map-entry form input[type=text] {
+        width: 90%; }
+      #content #sidebar #map-entry form input[type=submit] {
+        margin-top: 1em; }
+      #content #sidebar #map-entry form #pin_zip {
+        width: 40%; }
+  #content #sidebar #widget {
+    width: 261px;
+    padding: 10px 0 0 20px;
+    position: relative;
+    right: 16px; }
+
 .clear {
   clear: both; }
 
@@ -13,103 +117,6 @@ body {
   width: 960px;
   margin: 0 auto;
   padding-bottom: 10px; }
-  #content #sidebar {
-    float: left;
-    width: 300px;
-    margin-top: 110px;
-    font-family: Times New Roman, serif;
-    font-size: 11pt;
-    line-height: 0.9em;
-    text-align: center; }
-    #content #sidebar div {
-      text-align: left; }
-    #content #sidebar #madison-logo {
-      width: 241px;
-      text-align: center; }
-    #content #sidebar #get-involved {
-      width: 241px;
-      text-align: center;
-      padding: 10px 3px;
-      font-size: 200%; }
-    #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #posterous, #content #sidebar #flickr, #content #sidebar #map-entry, #content #sidebar #add-your-pin, #content #sidebar h2 {
-      width: 243px; }
-    #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #posterous, #content #sidebar #flickr, #content #sidebar #map-entry, #content #sidebar #add-your-pin {
-      height: 90px;
-      font-size: 140%;
-      border-color: #e8eefa;
-      border-style: solid;
-      border-width: 1px;
-      padding: 3px;
-      margin-top: 10px;
-      padding-bottom: 15px; }
-      #content #sidebar #fb span, #content #sidebar #twitter span, #content #sidebar #posterous span, #content #sidebar #flickr span, #content #sidebar #map-entry span, #content #sidebar #add-your-pin span {
-        display: block;
-        font-size: 10pt;
-        font-style: italic;
-        line-height: 1.3em; }
-      #content #sidebar #fb a, #content #sidebar #fb form, #content #sidebar #twitter a, #content #sidebar #twitter form, #content #sidebar #posterous a, #content #sidebar #posterous form, #content #sidebar #flickr a, #content #sidebar #flickr form, #content #sidebar #map-entry a, #content #sidebar #map-entry form, #content #sidebar #add-your-pin a, #content #sidebar #add-your-pin form {
-        background-color: #e8eefa;
-        background-position: 5px;
-        background-repeat: no-repeat;
-        line-height: 1.3em;
-        display: block;
-        height: 100%;
-        color: #555555;
-        text-decoration: none;
-        padding-left: 75px;
-        padding-top: 12px; }
-        #content #sidebar #fb a #flash, #content #sidebar #fb form #flash, #content #sidebar #twitter a #flash, #content #sidebar #twitter form #flash, #content #sidebar #posterous a #flash, #content #sidebar #posterous form #flash, #content #sidebar #flickr a #flash, #content #sidebar #flickr form #flash, #content #sidebar #map-entry a #flash, #content #sidebar #map-entry form #flash, #content #sidebar #add-your-pin a #flash, #content #sidebar #add-your-pin form #flash {
-          display: block;
-          text-align: center;
-          padding: 3px;
-          background-color: #f9ebb8;
-          border-color: #f6d466;
-          border-style: solid;
-          border-width: 1px; }
-    #content #sidebar #fb a {
-      background-image: url(/images/fb.png); }
-    #content #sidebar #twitter a {
-      background-image: url(/images/twitter.png); }
-    #content #sidebar #posterous a {
-      background-image: url(/images/posterous.png); }
-    #content #sidebar #flickr a {
-      background-image: url(/images/flickr.png); }
-    #content #sidebar #add-your-pin a {
-      background-image: url(/images/gmap.png); }
-    #content #sidebar h2 {
-      color: #555555;
-      text-align: right;
-      font-weight: bold;
-      font-size: 150%;
-      margin-top: 30px;
-      margin-bottom: -5px;
-      padding-bottom: 0;
-      line-height: 1.2em; }
-    #content #sidebar #map-entry {
-      height: 100%;
-      padding-bottom: 6px; }
-      #content #sidebar #map-entry form {
-        height: 100%;
-        text-align: right;
-        display: block;
-        padding: 1em;
-        margin-bottom: -3px;
-        font-size: 80%; }
-        #content #sidebar #map-entry form label {
-          margin-top: 0.5em;
-          display: block;
-          width: 100%; }
-        #content #sidebar #map-entry form input[type=text] {
-          width: 90%; }
-        #content #sidebar #map-entry form input[type=submit] {
-          margin-top: 1em; }
-        #content #sidebar #map-entry form #pin_zip {
-          width: 40%; }
-    #content #sidebar #widget {
-      width: 261px;
-      padding: 10px 0 0 20px;
-      position: relative;
-      right: 16px; }
   #content #main {
     padding: 110px 115px 0 300px;
     background-image: url(/images/header.png);

@@ -2,34 +2,35 @@
   = javascript_include_tag 'http://maps.google.com/maps/api/js?sensor=false'
   :javascript
     var pins = #{pins_to_js(@pins)};
+    $(function(){
+      $("a[href='#map-entry']").click(function(){
+        $('#pin_name').focus();
+      });
+    });
   = javascript_include_tag 'map'
+
 - content_for :sidebar do
-  #add-your-pin
-    - add_your_pin = capture_haml do
-      Add your map pin
-      %span
-        Show your support by adding your address to the map.
-        Fill out the information below.
-    = link_to add_your_pin, '#map-entry'
-  %h2
-    Show your support!
-    %br
-    Fill out the
-    %br
-    information below
-  #map-entry
-    - form_for @pin do |pin|
-      = pin.error_messages
-      - if flash[:notice] || params[:f].present?
-        %span#flash= flash[:notice] || params[:f]
-      = pin.label :name, 'Your Name or Business Name'
-      = pin.text_field :name
-      = pin.label :address, 'Address for Map (optional)'
-      = pin.text_field :address
-      = pin.label :zip, 'Zip Code'
-      = pin.text_field :zip
-      %br/
-      = pin.submit
+  %li
+    #add-your-pin
+      - add_your_pin = capture_haml do
+        Add your map pin
+        %span
+          Show your support by adding your address to the map.
+          Fill out the information below.
+      = link_to add_your_pin, '#map-entry'
+      #map-entry
+        - form_for @pin do |pin|
+          = pin.error_messages
+          - if flash[:notice] || params[:f].present?
+            %span#flash= flash[:notice] || params[:f]
+          = pin.label :name, 'Your Name or Business Name'
+          = pin.text_field :name
+          = pin.label :address, 'Address for Map (optional)'
+          = pin.text_field :address
+          = pin.label :zip, 'Zip Code'
+          = pin.text_field :zip
+          %br/
+          = pin.submit
 
 
 %h1 Bring Google Fiber to Madison!
