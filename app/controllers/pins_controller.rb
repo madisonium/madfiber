@@ -1,4 +1,6 @@
 class PinsController < ApplicationController
+  before_filter :authenticate_user!
+
   respond_to :html
   def index
     @unapproved_pins = Pin.not_ok
