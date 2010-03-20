@@ -4,7 +4,7 @@ source 'http://gemcutter.org'
 gem "rails", "3.0.0.beta"
 gem 'thin', :group => :production
 gem "pg"
-gem 'haml'
+gem 'haml', :git => 'git://github.com/nex3/haml.git'
 
 gem 'resource_controller'
 gem 'geokit'
