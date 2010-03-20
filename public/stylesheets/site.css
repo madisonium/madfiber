@@ -133,6 +133,13 @@ body {
   body a, body a:visited {
     color: #5884b1; }
 
+body.pins {
+  font-size: 10pt; }
+  body.pins .actions {
+    font-size: smaller; }
+  body.pins #content #main {
+    padding-left: 0; }
+
 #content {
   background-image: url(/images/background.png);
   background-repeat: repeat-y;

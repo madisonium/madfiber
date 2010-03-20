@@ -1,0 +1,7 @@
+%tr{:class => cycle('even', 'odd')}[pin]
+  %td= pin.name
+  %td= pin.address
+  %td= pin.zip
+  %td.actions
+    = link_to 'approve', approve_pin_path(pin), :method => :post
+    = link_to 'add madison', add_madison_pin_path(pin), :method => :post

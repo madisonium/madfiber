@@ -1,0 +1,7 @@
+%tr{:class => "#{cycle('even', 'odd')}#{' far' if pin.far?}"}[pin]
+  %td= pin.name
+  %td= pin.address
+  %td= pin.zip
+  %td= pin.latlng
+  %td.actions
+    = link_to 'add madison', add_madison_pin_path(pin), :method => :post
