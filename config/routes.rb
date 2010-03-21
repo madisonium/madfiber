@@ -8,7 +8,7 @@ Madfiber::Application.routes.draw do |map|
     end
   end
 
-  # resources :cabal_members, :as => 'cabal'
+  resources :cabal_members, :as => 'cabal'
 
   root :to => 'welcome#hi'
   # The priority is based upon order of creation:

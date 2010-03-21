@@ -9,7 +9,7 @@ gem 'haml', :git => 'git://github.com/nex3/haml.git'
 gem 'resource_controller'
 gem 'geokit'
 gem 'devise', '1.1.pre4'
-gem 'decent_exposure', '0.2.2'
+gem 'cancan'
 
 # gem 'twitter-auth',
   # :require => 'twitter_auth/engine',

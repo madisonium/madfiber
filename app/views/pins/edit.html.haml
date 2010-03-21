@@ -1,0 +1,11 @@
+- content_for :stylesheets do
+  = stylesheet_link_tag 'pins'
+%h2 Edit Pin
+
+- form_for @pin do |f|
+  %fieldset
+    = render :partial => 'form', :object => f
+  .actions
+    = f.submit 'Save'
+    = link_to 'Cancel', pins_path
+    = f.submit 'Delete'
