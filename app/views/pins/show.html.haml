@@ -1,0 +1,15 @@
+%dl
+  %dt Name
+  %dd= @pin.name
+  %dt Address
+  %dd= @pin.address
+  %dt Zip
+  %dd= @pin.zip
+  %dt Approved
+  %dd= @pin.approved ? 'Yes' : 'No'
+  %dt Lat/Long
+  %dd= @pin.latlng
+%p
+  = link_to 'Edit', edit_pin_path(@pin)
+  = link_to 'Back to List', pins_path
+  = button_to 'Delete', pin_path(@pin), :method => :delete

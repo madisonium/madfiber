@@ -4,6 +4,7 @@
     -# TODO: add meta tags!
     %title Help Bring Google Fiber to Madison! (MadFiber)
     = stylesheet_link_tag 'site'
+    = yield :stylesheets
     - if Rails.env.development?
       = javascript_include_tag 'jquery/jquery-1.4.2'
     - else
@@ -40,17 +41,17 @@
       #main
         - if user_signed_in?
           #sign-out= link_to '[logout]', destroy_user_session_path
-        - unless flash.empty?
+        - if flash.present? && controller_name != 'welcome'
           - flash.each do |k,v|
             %div{:id => "flash_#{k}"}= v
         = yield
       .clear
     #footer
-      -#%ul
-        %li.first= link_to 'About Us'
-        %li= link_to 'Privacy Policy'
-      %br
-      &copy;2010 Bradley Grzesiak/Preston Austin
+      %ul
+        %li.first= link_to 'The MadFiber Cabal', cabal_members_path
+        -#%li= link_to 'Privacy Policy'
+      &copy;2010
+      = link_to 'The MadFiber Cabal', cabal_members_path
 
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
