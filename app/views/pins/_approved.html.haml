@@ -4,4 +4,7 @@
   %td= pin.zip
   %td= pin.latlng
   %td.actions
+    = link_to 'edit', edit_pin_path(pin)
+    = link_to 'show', pin_path(pin)
+    &nbsp;
     = link_to 'add madison', add_madison_pin_path(pin), :method => :post
