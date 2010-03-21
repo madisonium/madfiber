@@ -20,23 +20,23 @@
     list-style-type: none;
     margin-left: 0;
     padding-left: 0; }
-  #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #posterous, #content #sidebar #flickr, #content #sidebar #map-entry, #content #sidebar #add-your-pin, #content #sidebar h2 {
+  #content #sidebar #nominate, #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #posterous, #content #sidebar #flickr, #content #sidebar #map-entry, #content #sidebar #add-your-pin, #content #sidebar h2 {
     width: 243px; }
-  #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #posterous, #content #sidebar #flickr {
+  #content #sidebar #nominate, #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #posterous, #content #sidebar #flickr {
     height: 90px;
     padding: 3px 3px 15px; }
-  #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #posterous, #content #sidebar #flickr, #content #sidebar #add-your-pin {
+  #content #sidebar #nominate, #content #sidebar #fb, #content #sidebar #twitter, #content #sidebar #posterous, #content #sidebar #flickr, #content #sidebar #add-your-pin {
     font-size: 130%;
     border-color: #e8eefa;
     border-style: solid;
     border-width: 1px;
     margin-top: 10px; }
-    #content #sidebar #fb span, #content #sidebar #twitter span, #content #sidebar #posterous span, #content #sidebar #flickr span, #content #sidebar #add-your-pin span {
+    #content #sidebar #nominate span, #content #sidebar #fb span, #content #sidebar #twitter span, #content #sidebar #posterous span, #content #sidebar #flickr span, #content #sidebar #add-your-pin span {
       display: block;
       font-size: 10pt;
       font-style: italic;
       line-height: 1.3em; }
-    #content #sidebar #fb a, #content #sidebar #fb form, #content #sidebar #twitter a, #content #sidebar #twitter form, #content #sidebar #posterous a, #content #sidebar #posterous form, #content #sidebar #flickr a, #content #sidebar #flickr form, #content #sidebar #add-your-pin a, #content #sidebar #add-your-pin form {
+    #content #sidebar #nominate a, #content #sidebar #nominate form, #content #sidebar #fb a, #content #sidebar #fb form, #content #sidebar #twitter a, #content #sidebar #twitter form, #content #sidebar #posterous a, #content #sidebar #posterous form, #content #sidebar #flickr a, #content #sidebar #flickr form, #content #sidebar #add-your-pin a, #content #sidebar #add-your-pin form {
       background-color: #e8eefa;
       background-position: 5px;
       background-repeat: no-repeat;
@@ -47,7 +47,7 @@
       text-decoration: none;
       padding-left: 75px;
       padding-top: 12px; }
-      #content #sidebar #fb a #flash, #content #sidebar #fb form #flash, #content #sidebar #twitter a #flash, #content #sidebar #twitter form #flash, #content #sidebar #posterous a #flash, #content #sidebar #posterous form #flash, #content #sidebar #flickr a #flash, #content #sidebar #flickr form #flash, #content #sidebar #add-your-pin a #flash, #content #sidebar #add-your-pin form #flash {
+      #content #sidebar #nominate a #flash, #content #sidebar #nominate form #flash, #content #sidebar #fb a #flash, #content #sidebar #fb form #flash, #content #sidebar #twitter a #flash, #content #sidebar #twitter form #flash, #content #sidebar #posterous a #flash, #content #sidebar #posterous form #flash, #content #sidebar #flickr a #flash, #content #sidebar #flickr form #flash, #content #sidebar #add-your-pin a #flash, #content #sidebar #add-your-pin form #flash {
         display: block;
         text-align: center;
         padding: 3px;
@@ -57,6 +57,8 @@
         border-width: 1px; }
   #content #sidebar #add-your-pin {
     padding: 3px 3px 0; }
+  #content #sidebar #nominate a {
+    background-image: url(/images/fiberrfi.png); }
   #content #sidebar #fb a {
     background-image: url(/images/fb.png); }
   #content #sidebar #twitter a {
@@ -155,6 +157,10 @@ body.pins {
     #content #main h1 {
       margin-top: -30px;
       padding-top: 0; }
+    #content #main h4 {
+      margin-bottom: 0; }
+      #content #main h4+p {
+        margin-top: 0.5em; }
     #content #main p {
       text-align: justify; }
     #content #main p, #content #main li {

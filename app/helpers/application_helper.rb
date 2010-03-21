@@ -20,6 +20,10 @@ module ApplicationHelper
     'http://www.google.com/appserve/fiberrfi/public/options'
   end
 
+  def google_rfi_url
+    'http://www.google.com/intl/en/appserve/fiberrfi/Google_Fiber_for_Communities.pdf'
+  end
+
   def google_overview_url
     'http://www.google.com/appserve/fiberrfi/public/overview'
   end
@@ -28,16 +32,12 @@ module ApplicationHelper
     'http://madfiber.posterous.com'
   end
 
-  def widget_url
-    "http://www.widgetbox.com/widget/madfibers-posterous-share-your-hopes-and-dream"
+  def twitter_url
+    'http://twitter.com/GoogNet4Madison'
   end
 
-  def widget_install_url
-    "http://docs.widgetbox.com/using-widgets/installing-widgets/why-cant-i-see-my-widget/"
-  end
-
-  def widget_js_url
-    'http://cdn.widgetserver.com/syndication/subscriber/InsertWidget.js'
+  def youtube_url
+    'http://www.youtube.com/madfiber2010'
   end
 
 end

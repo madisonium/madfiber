@@ -14,6 +14,7 @@
     #add-your-pin= render :partial => 'shared/panels/add_your_pin'
 
 %h1 Bring Google Fiber to Madison!
+
 %p
   Google is launching
   = link_to 'an experiment', google_landing_url
@@ -21,40 +22,48 @@
   = link_to '"ultra-high speed broadband"', google_overview_url
   to
   %strong just one city
-  in the United States.
+  in the United States, and Madison fits their stated criteria. The Google Fiber trial network would offer Internet speeds of 1 gigabit per second (1,000 megabit per second) &mdash; or more than 100 times faster than what most Americans have today at a competitive price.
+
 %p
-  The Google Fiber trial network will allow people in the test city to experience Internet speeds of 1 gigabit per second &mdash; or
-  = precede '"' do
-    %strong more than 100 times faster
-  than what most Americans have today" at "a competitive price." Google intends to test this ultra-high speed Internet in a city with a population between 50,000 and 500,000.
-%p
-  With a population of just under 225,000, we believe Madison is a perfect fit as Google's trial city. Madison has a strong research and technology base, augmented by the 40,000 strong University of Wisconsin student population. Madison is also home to a growing high-tech entrepreneur community and is home to many young professionals, who, along with college students, make up a large percentage of the demographic that loves to consume large amounts of bandwidth. Madison's city government is also a strong supporter of helping bring Google Fiber to Madison.
-%p
-  Show your support by signing your household up on this Google Maps interactive petition. Invite your neighbors, co-workers and other Madisonians! Join the
-  = succeed ',' do
-    = link_to 'Facebook group', facebook_url
-  follow our progress on Twitter and remember to Google Buzz to bring Google Fiber to Madison!
-%h2 4 Things You Can Do
+  We believe Madison is a perfect fit as Google's trial city. Madison has a strong research and technology base, augmented by the 40,000 strong University of Wisconsin student population (10,000 new hungry minds a year) Madison hosts a growing high-tech entrepreneurial sector employing the demographics that will immediately adopt this service. Finally, Madison's city government is strongly and officially supporting this effort.
+
+%h3 Everyone can show support:
 %ul
   %li
     Fill out the
     = link_to 'Google Fiber Nomination form', google_nomination_url
-    or use the
+    or the
     = link_to 'City of Madison survey', city_survey_url
-    to log your support with the City's response
   %li
-    Follow &amp; Contribute! Post your thoughts, pictures and videos to madfiber's
-    = link_to 'Facebook', facebook_url
-    and
-    = link_to 'Flickr', flickr_url
-    pages
-  %li
-    You can also email posts to our
-    = link_to 'blog', posterous_url
-    at
+    Email pictures and video saying how you support Google Fiber to
     = mail_to 'post@madfiber.posterous.com', 'post@madfiber.posterous.com', :subject => 'I Support Google Fiber #madfiber ((tag:madfiber))'
   %li
-    Add your name, address and zip to the GooFi Map!
+    Join and share with friends on
+    = succeed ',' do
+      = link_to 'Flickr', flickr_url
+    = succeed ',' do
+      = link_to 'Facebook', facebook_url
+    = succeed ',' do
+      = link_to 'YouTube', youtube_url
+    and
+    = link_to 'Twitter', twitter_url
+%h4 Madison Businesses, Academics, Scientists &amp; Startups:
+%p
+  We need your support of the
+  = link_to 'Google RFI', google_rfi_url
+  response. Please provide open letters of support or comments we can both publish and reflect in the City's formal response. Send to
+  = mail_to 'preston@imby.info'
+  or post via
+  = succeed '.' do
+    = mail_to 'post@madfiber.posterous.com', 'post@madfiber.posterous.com', :subject => 'I Support Google Fiber #madfiber ((tag:madfiber))'
+  We hope to collect material that addresses any of these points in your area of expertise
+  %strong By Wednesday!
+%ol
+  %li What makes us a good partner with the resources for efficient implementation and cooperative operation of the trial?
+  %li How will we generate applications and services that creatively utilize this capability for the benefit of the community?
+  %li We have diverse unique assets that further enhance our value as Google’s partner, how will we apply them to create game changing uses of a 100,000+ homes local gigabit network?
+
+
 #gmap{style: 'width: 500px; height: 500px'}
 #how-many #{@pins.count} people are interested!
 %p
