@@ -10,6 +10,8 @@ Madfiber::Application.routes.draw do |map|
 
   resources :cabal_members, :as => 'cabal'
 
+  match 'supporters' => 'welcome#supporters', :as => 'supporters'
+
   root :to => 'welcome#hi'
   # The priority is based upon order of creation:
   # first created -> highest priority.

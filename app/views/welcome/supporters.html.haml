@@ -1,0 +1,50 @@
+- content_for :stylesheets do
+  = stylesheet_link_tag 'supporters'
+
+#supporters
+  %h3 Supporting Organizations
+  %p These organizations have been incredibly involved and contributed time, effort, and resources to the MadFiber effort.
+  %hr/
+  = link_to image_tag('support_acceleratemadison.png'), 'http://www.acceleratemadison.org'
+  %hr/
+  = link_to image_tag('support_capitalentrepreneurs.png'), "http://www.capitalentrepreneurs.com/google-fiber"
+  %hr/
+  = link_to image_tag('support_madisonchamber.png'), "http://www.greatermadisonchamber.com/"
+  %hr/
+  = link_to image_tag('support_downtownmadisoninc.png'), "http://www.downtownmadison.org/"
+  %hr/
+  = link_to image_tag('support_cityofmadison.png'), "http://www.cityofmadison.com/"
+  %hr/
+  = link_to image_tag('support_thrive.png'), "http://www.thrivehere.org/"
+  %hr/
+  = link_to image_tag('support_matc.png'), "http://matcmadison.edu/"
+  %hr/
+  = link_to image_tag('support_mmsd.png'), "http://www.madison.k12.wi.us/"
+  %hr/
+  = link_to image_tag('support_uwbabcock.png'), "http://foodsci.wisc.edu/services/dairy/"
+  %hr/
+  = link_to image_tag('support_uwchancellor.png'), "http://www.chancellor.wisc.edu/"
+  %hr/
+  = link_to image_tag('support_uwdoit.png'), "http://www.doit.wisc.edu/"
+#cabal
+  %h3 The MadFiber Cabal
+  %p These are the individuals leading the MadFiber effort and are dedicated to bringing Google Fiber to Madison.
+  %hr/
+  %ul
+    - @cabal_members.each do |member|
+      %li
+        %div
+          = image_tag(member[:image_url])
+          %span
+            = link_to member[:name], member[:url]
+            %br
+            = link_to member[:business], member[:business_url]
+#additional
+  %p The following individuals have also been incredibly involved in the MadFiber effort.
+  %ul
+    %li Maurice Cheeks
+    %li Albert Chiozzi
+    %li Glenn Loos-Austin
+    %li Matt Peterson
+    %li Kyle Pfister
+  %p#you And of course YOU! Thanks for supporting the MadFiber effort.
