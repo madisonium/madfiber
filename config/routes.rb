@@ -11,6 +11,7 @@ Madfiber::Application.routes.draw do |map|
   resources :cabal_members, :as => 'cabal'
 
   match 'supporters' => 'welcome#supporters', :as => 'supporters'
+  match 'down_payment' => 'welcome#down_payment', :as => 'down_payment'
 
   root :to => 'welcome#hi'
   # The priority is based upon order of creation:
