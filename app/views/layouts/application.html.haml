@@ -14,7 +14,7 @@
     #content
       - unless @hide_sidebar
         #sidebar
-          #madison-logo= image_tag 'BringGoogleFiberToMadisonLogo.png'
+          #madison-logo= link_to_unless_current image_tag('BringGoogleFiberToMadisonLogo.png'), root_path
           #get-involved Get Involved!
           %ul
             %li

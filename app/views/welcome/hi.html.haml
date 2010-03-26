@@ -32,8 +32,6 @@
   %li
     Fill out the
     = link_to 'Google Fiber Nomination form', google_nomination_url
-    or the
-    = link_to 'City of Madison survey', city_survey_url
   %li
     Email pictures and video saying how you support Google Fiber to
     = mail_to 'post@madfiber.posterous.com', 'post@madfiber.posterous.com', :subject => 'I Support Google Fiber #madfiber ((tag:madfiber))'
@@ -51,23 +49,6 @@
   See the
   = link_to 'organizations and people', supporters_path
   behind this effort.
-%h4 Madison Businesses, Academics, Scientists, Nonprofits, Government Agencies &amp; Startups:
-%p
-  We need your support of the
-  = link_to 'Google RFI', google_rfi_url
-  response. Please provide open letters of support or comments we can both publish and reflect in the City's formal response. Send to
-  = mail_to 'preston@imby.info'
-  or post via
-  = succeed '.' do
-    = mail_to 'post@madfiber.posterous.com', 'post@madfiber.posterous.com', :subject => 'I Support Google Fiber #madfiber ((tag:madfiber))'
-  We need to collect material that addresses any of these points in your area of expertise
-  %strong by Wednesday
-  for a truly competitive application:
-%ol
-  %li What makes us a good partner with the resources for efficient implementation and cooperative operation of the trial?
-  %li How will we generate applications and services that creatively utilize this capability for the benefit of the community?
-  %li We have diverse unique assets that further enhance our value as Google’s partner, how will we apply them to create game changing uses of a 100,000+ homes local gigabit network?
-
 
 #gmap{style: 'width: 580px; height: 580px'}
 #how-many #{@pins.count} people are interested!
