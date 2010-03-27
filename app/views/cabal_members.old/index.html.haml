@@ -1,0 +1,9 @@
+- content_for :stylesheets do
+  = stylesheet_link_tag 'cabal'
+
+%h1 The MadFiber "Cabal"
+%p
+  The MadFiber Cabal is made up of individuals dedicated to bringing fiber to Madison. If you'd like to "be one of us," please email
+  = mail_to 'preston@imby.info'
+%dl
+  = render :partial => 'cabal_member', :collection => @cabal_members

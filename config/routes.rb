@@ -8,7 +8,11 @@ Madfiber::Application.routes.draw do |map|
     end
   end
 
-  resources :cabal_members, :as => 'cabal'
+  resources :cabal_members, :as => 'cabal' do
+    collection do
+      post :set_positions
+    end
+  end
 
   match 'supporters' => 'welcome#supporters', :as => 'supporters'
   match 'down_payment' => 'welcome#down_payment', :as => 'down_payment'

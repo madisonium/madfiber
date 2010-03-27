@@ -1,6 +1,21 @@
-dt {
-  float: left;
-  margin-right: 3px; }
+ul {
+  list-style-type: none;
+  width: 100%; }
 
-dd {
-  margin: 10px 0; }
+li {
+  margin-right: 50px;
+  height: 120px; }
+  li .handle {
+    float: left;
+    margin-top: 42px;
+    margin-right: 5px; }
+  li .photo {
+    float: left; }
+    li .photo img {
+      width: 100px;
+      height: 100px; }
+  li .desc {
+    margin-left: 5px;
+    float: left; }
+  li .actions {
+    float: right; }

@@ -1,9 +1,30 @@
 - content_for :stylesheets do
   = stylesheet_link_tag 'cabal'
+- content_for :javascripts do
+  = javascript_include_tag 'jquery/jquery-ui', 'rails', 'cabal_members'
+  = csrf_meta_tag
 
-%h1 The MadFiber "Cabal"
+%h1 Cabal Members
+
 %p
-  The MadFiber Cabal is made up of individuals dedicated to bringing fiber to Madison. If you'd like to "be one of us," please email
-  = mail_to 'preston@imby.info'
-%dl
-  = render :partial => 'cabal_member', :collection => @cabal_members
+  Drag to put in order that's shown on the
+  = link_to 'supporters', supporters_path
+  page
+%ul#members
+  - @cabal_members.each do |cabal_member|
+    %li[cabal_member]
+      %div
+        = icon(:arrow_out, nil, :class => 'handle')
+        .photo
+          = image_tag(cabal_member.image_url || '')
+        .desc
+          = link_to cabal_member.name, cabal_member.url
+          %br
+          = link_to cabal_member.business, cabal_member.business_url
+        .actions
+          =  link_to 'Edit', edit_cabal_member_path(cabal_member)
+          =  link_to icon(:cancel), cabal_member, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New cabal_member', new_cabal_member_path

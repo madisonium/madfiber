@@ -1,5 +1,13 @@
 module ApplicationHelper
 
+  def icon(name, alt = nil, opts = {})
+    opts[:border] = 0 unless opts[:border]
+    opts[:align] = "bottom" unless opts[:align]
+    opts[:alt] = alt
+    image_tag "icons/#{name}.png", opts
+  end
+
+
   def city_survey_url
     'http://www.surveymonkey.com/s.aspx?sm=k%2bEqX3BaB6cqiHPoEZOq8kq9w15RSm%2bV19jRk46qcPc%3d&'
   end

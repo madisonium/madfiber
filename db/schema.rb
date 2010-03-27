@@ -9,7 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100320212209) do
+ActiveRecord::Schema.define(:version => 20100327184411) do
+
+  create_table "cabal_members", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.string   "business"
+    t.string   "business_url"
+    t.string   "image_url"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pins", :force => true do |t|
     t.string   "name"

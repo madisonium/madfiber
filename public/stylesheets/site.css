@@ -11,7 +11,7 @@
   #content #sidebar #madison-logo {
     width: 241px;
     text-align: center; }
-    #content #sidebar #madison-logo a {
+    #content #sidebar #madison-logo a, #content #sidebar #madison-logo img {
       border: none !important; }
   #content #sidebar #get-involved {
     width: 241px;

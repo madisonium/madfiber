@@ -1,0 +1,17 @@
+- form_for @cabal_member do |f|
+  = f.error_messages
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :url
+    = f.text_field :url
+  .field
+    = f.label :business
+    = f.text_field :business
+  .field
+    = f.label :business_url
+    = f.text_field :business_url
+  .actions
+    = f.submit 'Save'

@@ -1,0 +1,19 @@
+%p
+  %b Name:
+  = @cabal_member.name
+%p
+  %b Url:
+  = @cabal_member.url
+%p
+  %b Business:
+  = @cabal_member.business
+%p
+  %b Business url:
+  = @cabal_member.business_url
+%p
+  %b Position:
+  = @cabal_member.position
+
+= link_to 'Edit', edit_cabal_member_path(@cabal_member)
+\|
+= link_to 'Back', cabal_members_path

@@ -3,3 +3,7 @@ config/database.yml
 db/*.sqlite3
 log/*.log
 tmp/**/*
+# get famfamfam from: http://www.famfamfam.com/lab/icons/silk/
+# removed from git to save space on heroku
+doc/famfamfam_silk_icons_v013.zip
+doc/icons
