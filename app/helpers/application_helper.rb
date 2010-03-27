@@ -16,20 +16,16 @@ module ApplicationHelper
     'http://www.google.com/appserve/fiberrfi'
   end
 
-  def google_nomination_url
-    'http://www.google.com/appserve/fiberrfi/public/options'
-  end
-
-  def google_rfi_url
-    'http://www.google.com/intl/en/appserve/fiberrfi/Google_Fiber_for_Communities.pdf'
-  end
-
   def google_overview_url
     'http://www.google.com/appserve/fiberrfi/public/overview'
   end
 
   def posterous_url
     'http://madfiber.posterous.com'
+  end
+
+  def rfi_url
+    'http://googlerfi.madfiber.net'
   end
 
   def twitter_url
